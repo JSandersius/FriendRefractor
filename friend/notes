@@ -8,10 +8,23 @@ we're importing two components and a json object
 
 lets start with the Wrapper component 
 
-App.js is importing Wrapper from the Components folder, howerver when we look within the components folder we see that Wrapper is a folder not a file. 
+App.js is importing Wrapper from the Components folder, howerver when we look within the components folder we see that 
+Wrapper is a folder not a file. 
 When this happens it means that we are importing the index.js from that folder 
-
+but
 within index.js we see that it is exporting 
+the Wrapper JS file within this directory
+
+why do this? 
+
+This helps with organization 
+Because we can keep the css files in the same folder structure as the component file 
+
+When we open the wrapper it looks like the reason we have this is to wrap the inner component within this one 
+For styling purposes
+
+the props here would be the friend, cards and header 
+
 
 
 
