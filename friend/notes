@@ -25,6 +25,25 @@ For styling purposes
 
 the props here would be the friend, cards and header 
 
+when we inspect the wrapper element we an see all of it is CSS
+
+going back to App.js we see that inside the imported json-object 
+we see it an array of objects 
+it is an array of more than three objects but it is only rendering three 
+
+this is because it is being done manually as we can seen in App.js 
+
+The assignment is to automate this so no matter the length of the array, we can render every single object 
+
+To do this we are going to refactor the code using the JSX funtion MAP 
+
+We're going to make a friend card for each object 
+thats going to have the same props that it had before 
+however this time we're going to add a KEY and an ID 
+
+we can use the ID property for each object to do this 
+
+
 
 
 
