@@ -17,7 +17,10 @@ class App extends Component= () => {
     removeFriend = id => {          //when the x is clicked on the friend this function will be triggered and we will the remove the friend from list.state.friends 
                                     // in order to correctly identify which friend the user selected 
                                         //we're going pass the id Prop from the compnent in which the x was selected
-    }                                       //we first have to pass the remove card func  down to the 
+    }                                       //we first have to pass the remove card func  down to the friend card component 
+                                                //the child component cannot directly change the parent components state 
+                                                  //the child component must be given access to a function within the parent component to update the state 
+                                                    // 
 
 
   render() {
@@ -26,6 +29,8 @@ class App extends Component= () => {
     <h1 className="title">Friends List</h1>
     {friends.map(friend => (
     <FriendCard
+
+      removeFriend={this.removeFriend}
       id={friend.id}
       key={friend.id}
       name={friend.name}
