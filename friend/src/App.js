@@ -7,14 +7,16 @@ import "./App.css";
 const App = () => (
   <Wrapper>
     <h1 className="title">Friends List</h1>
+    {friends.map(friend => (
     <FriendCard
       id={friend.id}
       key={friend.id}
       name={friend.name}
       image={friend.image}
       occupation={friend.occupation}
-      location={friend.occupation}
+      location={friend.location}
     />
+      ))}
   </Wrapper>
 );
 
