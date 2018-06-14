@@ -14,9 +14,10 @@ class App extends Component= () => {
       friends
     };
 
-    removeFriend = id => {
-      
-    }
+    removeFriend = id => {          //when the x is clicked on the friend this function will be triggered and we will the remove the friend from list.state.friends 
+                                    // in order to correctly identify which friend the user selected 
+                                        //we're going pass the id Prop from the compnent in which the x was selected
+    }                                       //we first have to pass the remove card func  down to the 
 
 
   render() {
