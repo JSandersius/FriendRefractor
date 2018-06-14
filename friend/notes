@@ -43,6 +43,19 @@ however this time we're going to add a KEY and an ID
 
 we can use the ID property for each object to do this 
 
+--> now all of the friends appear, now we need to fix the delete friend functionality 
+to do this we are going to have to maintain something known as React Component State 
+The reason to use STATE is, when we remove a friend, we want the component to automatically re-render itself and keep track of 
+	which friends to render and which to not
+		we are NOT going to modify the json object every time a friend is removed
+		
+
+
+
+
+
+
+
 
 
 
