@@ -12,6 +12,8 @@ const App = () => (
       key={friend.id}
       name={friend.name}
       image={friend.image}
+      occupation={friend.occupation}
+      location={friend.occupation}
     />
   </Wrapper>
 );
