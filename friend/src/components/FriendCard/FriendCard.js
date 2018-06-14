@@ -1,3 +1,6 @@
+//we can see class named remove
+//this span element is going to need to trigger the remove friend function on-click                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+//we will do this by triggering props.remove Friend () props.id
 import React from "react";
 import "./FriendCard.css";
 
@@ -19,7 +22,7 @@ const FriendCard = props => (
         </li>
       </ul>
     </div>
-    <span className="remove">𝘅</span>
+    <span onClick={() => props.removeFriend(props.id)} className="remove">𝘅</span>
   </div>
 );
 

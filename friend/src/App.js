@@ -20,8 +20,7 @@ class App extends Component= () => {
     }                                       //we first have to pass the remove card func  down to the friend card component 
                                                 //the child component cannot directly change the parent components state 
                                                   //the child component must be given access to a function within the parent component to update the state 
-                                                    // 
-
+                                                    // lets look at the Friendcard.js to see where the remove function needs to go
 
   render() {
     return (
