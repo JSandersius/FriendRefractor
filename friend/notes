@@ -50,6 +50,9 @@ The reason to use STATE is, when we remove a friend, we want the component to au
 		we are NOT going to modify the json object every time a friend is removed
 
 in order to maintain state, we're going to have to refactor the component into a class
+	by extending --> component which is imported from the react package
+		we're creating a brand new 
+
 
 
 
