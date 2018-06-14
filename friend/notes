@@ -48,7 +48,8 @@ to do this we are going to have to maintain something known as React Component S
 The reason to use STATE is, when we remove a friend, we want the component to automatically re-render itself and keep track of 
 	which friends to render and which to not
 		we are NOT going to modify the json object every time a friend is removed
-		
+
+in order to maintain state, we're going to have to refactor the component into a class
 
 
 
