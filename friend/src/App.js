@@ -5,6 +5,19 @@ import friends from "./friends.json";
 import "./App.css";
 
 class App extends Component= () => {
+  //setting states is easy, we just assign properties to state sepereated my commas 
+  // in this case we're going to take advantage of ES6 and only type friends because the friends property is going to be equal to the friends array 
+  //which is imported from friends.json 
+
+  //  Setting this.state.friends to the friends json array 
+    state = {
+      friends
+    };
+
+    removeFriend = id => {
+      
+    }
+
 
   render() {
     return (
