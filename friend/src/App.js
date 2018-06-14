@@ -4,7 +4,10 @@ import Wrapper from "./components/Wrapper";
 import friends from "./friends.json";
 import "./App.css";
 
-const App = () => (
+class App extends Component= () => {
+
+  render() {
+    return (
   <Wrapper>
     <h1 className="title">Friends List</h1>
     {friends.map(friend => (
@@ -18,6 +21,9 @@ const App = () => (
     />
       ))}
   </Wrapper>
-);
+    );
+  }
+}
+
 
 export default App;
