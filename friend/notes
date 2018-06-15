@@ -1,3 +1,5 @@
+Combine the use of map, state, and props!
+
 with both app running we can see that in the unsolved app, we have many less friends than the solved app
 
 also the removing friends feature does not appear to be working 
@@ -76,6 +78,9 @@ https://www.youtube.com/watch?v=RBLIm5LMrmc
   	in order to identify which friend, we're going to pass the id prop from the component in which the X was selected 
   		lets make that on-click function now 
   			we first have to pass the remove card function down to the friend card component
+
+
+Ok we learned about state and classes as well as map
 
 
 

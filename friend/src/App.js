@@ -14,11 +14,17 @@ class App extends Component {
       friends
     };
 
-    removeFriend = id => {          //when the x is clicked on the friend this function will be triggered and we will the remove the friend from list.state.friends 
-      console.log(id); //did this to check if this is working 
+    removeFriend = id => {  
+    //Fiter this.state.friends for friends with an id not equal to the id being removed        
+    const friends = this.state.friends.filter(friend => friend.id !== id);
+    // Set this.state.friends equal to the new friends array 
+    this.setState({ friends });
+    };
+     //when the x is clicked on the friend this function will be triggered and we will the remove the friend from list.state.friends 
+      //console.log(id); //did this to check if this is working 
                                     // in order to correctly identify which friend the user selected 
                                         //we're going pass the id Prop from the compnent in which the x was selected
-    }                                       //we first have to pass the remove card func  down to the friend card component 
+                                         //we first have to pass the remove card func  down to the friend card component 
                                                 //the child component cannot directly change the parent components state 
                                                   //the child component must be given access to a function within the parent component to update the state 
                                                     // lets look at the Friendcard.js to see where the remove function needs to go
@@ -29,7 +35,7 @@ class App extends Component {
     return (
   <Wrapper>
     <h1 className="title">Friends List</h1>
-    {friends.map(friend => (
+    {this.state.friends.map(friend => (
     <FriendCard
 
       removeFriend={this.removeFriend}
